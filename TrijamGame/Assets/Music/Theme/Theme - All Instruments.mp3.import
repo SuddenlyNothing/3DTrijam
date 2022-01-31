@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/Theme - All Instruments.mp3-baaf10d80e125b2131ecb68da490b5c8.mp3str"
+
+[deps]
+
+source_file="res://Assets/Music/Theme/Theme - All Instruments.mp3"
+dest_files=[ "res://.import/Theme - All Instruments.mp3-baaf10d80e125b2131ecb68da490b5c8.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0

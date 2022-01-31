@@ -17,6 +17,7 @@ extents = Vector3( 2, 1, 2 )
 extents = Vector3( 1.9, 0.1, 1.9 )
 
 [node name="NoteBlock" type="MeshInstance"]
+transform = Transform( -1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 0, 0, 0 )
 mesh = SubResource( 1 )
 material/0 = SubResource( 2 )
 script = ExtResource( 2 )

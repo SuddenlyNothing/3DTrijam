@@ -5,6 +5,10 @@ export(Array, AudioStream) var audio_files
 var rng := RandomNumberGenerator.new()
 
 
+func _ready() -> void:
+	rng.randomize()
+
+
 func _on_Area_body_entered(body: Node) -> void:
 	var sfx := AudioStreamPlayer.new()
 	sfx.bus = "SFX"

@@ -9,4 +9,5 @@
 [ext_resource path="res://Assets/SFX/Piano/Piano - A.wav" type="AudioStream" id=7]
 
 [node name="PianoBlock" instance=ExtResource( 1 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0 )
 audio_files = [ ExtResource( 7 ), ExtResource( 2 ), ExtResource( 5 ), ExtResource( 4 ), ExtResource( 3 ), ExtResource( 6 ) ]

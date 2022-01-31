@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/Theme - Piano Only.mp3-203c1e37dc9e5925105bb79901689ae5.mp3str"
+
+[deps]
+
+source_file="res://Assets/Music/Theme/Theme - Piano Only.mp3"
+dest_files=[ "res://.import/Theme - Piano Only.mp3-203c1e37dc9e5925105bb79901689ae5.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0
