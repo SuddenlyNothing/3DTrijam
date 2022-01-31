@@ -40,6 +40,10 @@ func set_active(val) -> void:
 	active = val
 	$M.visible = val
 	mouse_capture.visible = val
+	if val:
+		Input.set_mouse_mode(Input.MOUSE_MODE_VISIBLE)
+	else:
+		Input.set_mouse_mode(Input.MOUSE_MODE_CAPTURED)
 	get_tree().paused = val
 
 # Closes option menu.
