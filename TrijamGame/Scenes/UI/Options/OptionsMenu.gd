@@ -43,7 +43,8 @@ func set_active(val) -> void:
 	if val:
 		Input.set_mouse_mode(Input.MOUSE_MODE_VISIBLE)
 	else:
-		Input.set_mouse_mode(Input.MOUSE_MODE_CAPTURED)
+		if get_tree().get_nodes_in_group("player").size() > 0:
+			Input.set_mouse_mode(Input.MOUSE_MODE_CAPTURED)
 	get_tree().paused = val
 
 # Closes option menu.

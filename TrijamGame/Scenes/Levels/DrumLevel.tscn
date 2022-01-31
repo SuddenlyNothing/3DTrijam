@@ -1,8 +1,9 @@
-[gd_scene load_steps=6 format=2]
+[gd_scene load_steps=7 format=2]
 
 [ext_resource path="res://Scenes/Levels/Game.tscn" type="PackedScene" id=1]
 [ext_resource path="res://Assets/Environment/PurplyBlueSky.png" type="Texture" id=2]
 [ext_resource path="res://Scenes/Environment/DrumsBlock.tscn" type="PackedScene" id=3]
+[ext_resource path="res://Assets/Music/Theme/Theme - Piano & Drums.mp3" type="AudioStream" id=4]
 
 [sub_resource type="PanoramaSky" id=1]
 resource_local_to_scene = true
@@ -14,6 +15,8 @@ background_mode = 2
 background_sky = SubResource( 1 )
 
 [node name="DrumLevel" instance=ExtResource( 1 )]
+next_scene = "res://Scenes/Levels/GuitarLevel.tscn"
+dialog = [ "The rumbling bass and thundering crash of a drum set.", "The drummer helps everyone keep time and emphasize the strong beats.", "Percussion shows the listener the heartbeat of a piece. Go wild!" ]
 
 [node name="DefaultTiles" parent="." index="1"]
 data = {
@@ -46,3 +49,6 @@ transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -2.14749, 13.6485, -34.7252 )
 
 [node name="Area" parent="." index="11"]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 18.3488, -49.6068 )
+
+[node name="AudioStreamPlayer" parent="." index="12"]
+stream = ExtResource( 4 )

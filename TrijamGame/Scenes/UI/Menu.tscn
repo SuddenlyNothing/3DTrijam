@@ -1,0 +1,80 @@
+[gd_scene load_steps=6 format=2]
+
+[ext_resource path="res://Assets/UI/Themes/BixTheme/BixTheme.tres" type="Theme" id=1]
+[ext_resource path="res://Scenes/UI/ChangeScene.gd" type="Script" id=2]
+[ext_resource path="res://Scenes/UI/ButtonSFX.gd" type="Script" id=3]
+[ext_resource path="res://Scenes/UI/Menu.gd" type="Script" id=4]
+[ext_resource path="res://Assets/Music/Menu/Menu.mp3" type="AudioStream" id=5]
+
+[node name="Menu" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+theme = ExtResource( 1 )
+script = ExtResource( 4 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="ColorRect" type="ColorRect" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+color = Color( 0.0941176, 0.254902, 0.466667, 1 )
+
+[node name="M" type="MarginContainer" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+custom_constants/margin_right = 200
+custom_constants/margin_left = 200
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="V" type="VBoxContainer" parent="M"]
+margin_left = 200.0
+margin_right = 824.0
+margin_bottom = 600.0
+custom_constants/separation = 150
+alignment = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label" type="Label" parent="M/V"]
+margin_left = 261.0
+margin_top = 133.0
+margin_right = 363.0
+margin_bottom = 175.0
+size_flags_horizontal = 4
+text = "Dreams"
+
+[node name="V" type="VBoxContainer" parent="M/V"]
+margin_top = 325.0
+margin_right = 624.0
+margin_bottom = 467.0
+
+[node name="Play" type="Button" parent="M/V/V"]
+margin_left = 269.0
+margin_right = 354.0
+margin_bottom = 69.0
+focus_mode = 0
+size_flags_horizontal = 4
+text = "Play"
+script = ExtResource( 2 )
+next_scene = "res://Scenes/Levels/StartLevel.tscn"
+
+[node name="Options" type="Button" parent="M/V/V"]
+margin_left = 251.0
+margin_top = 73.0
+margin_right = 373.0
+margin_bottom = 142.0
+focus_mode = 0
+size_flags_horizontal = 4
+text = "Options"
+script = ExtResource( 3 )
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 5 )
+autoplay = true
+bus = "Music"
+
+[connection signal="pressed" from="M/V/V/Options" to="." method="_on_Options_pressed"]

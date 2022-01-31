@@ -1,8 +1,9 @@
-[gd_scene load_steps=6 format=2]
+[gd_scene load_steps=7 format=2]
 
 [ext_resource path="res://Scenes/Levels/Game.tscn" type="PackedScene" id=1]
 [ext_resource path="res://Scenes/Environment/GuitarBlock.tscn" type="PackedScene" id=2]
 [ext_resource path="res://Assets/Environment/SunsetSky.png" type="Texture" id=3]
+[ext_resource path="res://Assets/Music/Theme/Theme - All Instruments.mp3" type="AudioStream" id=4]
 
 [sub_resource type="PanoramaSky" id=1]
 resource_local_to_scene = true
@@ -15,6 +16,8 @@ background_sky = SubResource( 1 )
 glow_enabled = true
 
 [node name="GuitarLevel" instance=ExtResource( 1 )]
+next_scene = "res://Scenes/UI/Menu.tscn"
+dialog = [ "Many children fantasize of playing on stage in front of millions of people and shredding on the electric guitar.", "Others just want to impress the girls.", "What's more inspiring than a guitar? A guitar with distortion!" ]
 
 [node name="DefaultTiles" parent="." index="1"]
 data = {
@@ -83,3 +86,6 @@ transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 2.38686, 19.1193, -112.272 )
 
 [node name="Area" parent="." index="23"]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 2.2192, 22.3726, -128.821 )
+
+[node name="AudioStreamPlayer" parent="." index="24"]
+stream = ExtResource( 4 )

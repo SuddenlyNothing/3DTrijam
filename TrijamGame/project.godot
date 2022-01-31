@@ -33,7 +33,7 @@ _global_script_class_icons={
 [application]
 
 config/name="TrijamGame"
-run/main_scene="res://Scenes/Levels/Game.tscn"
+run/main_scene="res://Scenes/UI/Menu.tscn"
 run/delta_smoothing=false
 config/icon="res://icon.png"
 

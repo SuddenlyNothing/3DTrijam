@@ -25,41 +25,40 @@ __meta__ = {
 anchor_right = 1.0
 anchor_bottom = 1.0
 mouse_filter = 2
-custom_constants/margin_top = 450
+custom_constants/margin_top = 390
 __meta__ = {
 "_edit_use_anchors_": false
 }
 
 [node name="TextBox" type="ColorRect" parent="Control/M"]
-margin_top = 450.0
+margin_top = 390.0
 margin_right = 1024.0
 margin_bottom = 600.0
 mouse_filter = 2
 color = Color( 0, 0, 0, 0.392157 )
 
 [node name="M" type="MarginContainer" parent="Control/M"]
-margin_top = 450.0
+margin_top = 390.0
 margin_right = 1024.0
 margin_bottom = 600.0
 mouse_filter = 2
-custom_constants/margin_right = 40
-custom_constants/margin_top = 40
-custom_constants/margin_left = 40
-custom_constants/margin_bottom = 40
+custom_constants/margin_right = 20
+custom_constants/margin_top = 20
+custom_constants/margin_left = 20
+custom_constants/margin_bottom = 20
 __meta__ = {
 "_editor_description_": ""
 }
 
 [node name="Label" type="Label" parent="Control/M/M"]
-margin_left = 40.0
-margin_top = 40.0
-margin_right = 984.0
-margin_bottom = 110.0
+margin_left = 20.0
+margin_top = 20.0
+margin_right = 1004.0
+margin_bottom = 190.0
 size_flags_horizontal = 3
 size_flags_vertical = 3
 custom_fonts/font = SubResource( 1 )
 autowrap = true
-clip_text = true
 
 [node name="Tween" type="Tween" parent="."]
 

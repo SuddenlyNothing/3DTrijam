@@ -3,7 +3,7 @@
 [ext_resource path="res://Scenes/Levels/Game.tscn" type="PackedScene" id=1]
 [ext_resource path="res://Assets/Environment/SkySkybox.png" type="Texture" id=2]
 [ext_resource path="res://Scenes/Environment/PianoBlock.tscn" type="PackedScene" id=3]
-[ext_resource path="res://Scenes/Levels/PianoLevel.gd" type="Script" id=4]
+[ext_resource path="res://Assets/Music/Theme/Theme - Piano Only.mp3" type="AudioStream" id=5]
 
 [sub_resource type="PanoramaSky" id=1]
 resource_local_to_scene = true
@@ -15,7 +15,8 @@ background_mode = 2
 background_sky = SubResource( 1 )
 
 [node name="PianoLevel" instance=ExtResource( 1 )]
-script = ExtResource( 4 )
+next_scene = "res://Scenes/Levels/DrumLevel.tscn"
+dialog = [ "A Piano or Keyboard is a composers best friend.", "The wide range of pitchs and ease of access makes it the instrument of choice for all. ", "Many a melody and harmony have been made on a piano... What is yours?" ]
 
 [node name="DefaultTiles" parent="." index="1"]
 data = {
@@ -51,3 +52,6 @@ transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0.378752, 8.70308, -53.4735 )
 
 [node name="Area" parent="." index="12"]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 12.8528, -68.3317 )
+
+[node name="AudioStreamPlayer" parent="." index="13"]
+stream = ExtResource( 5 )
