@@ -3,13 +3,13 @@ extends KinematicBody
 export var speed := 7.0
 export var jump_strength := 20.0
 export var gravity := 50.0
-export var rotation_speed := 30
+export var rotation_speed := 20
 
 var _velocity := Vector3.DOWN
 var _snap_vector := Vector3.DOWN
 
 onready var _spring_arm : SpringArm = $SpringArm
-onready var _model : Spatial = $Sprite3D
+onready var _model : Spatial = $model
 
 
 func _physics_process(delta: float) -> void:
@@ -33,7 +33,7 @@ func _physics_process(delta: float) -> void:
 	
 	if _velocity.length() > 0.2:
 		var look_direction = Vector2(_velocity.z, _velocity.x)
-		_model.rotation.y = lerp_angle(_model.rotation.y, look_direction.angle(), delta * rotation_speed)
+		_model.rotation.y = lerp_angle(_model.rotation.y, look_direction.angle() + PI, delta * rotation_speed)
 
 
 func _process(delta: float) -> void:
