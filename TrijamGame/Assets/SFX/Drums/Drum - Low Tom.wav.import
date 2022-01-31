@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/Drum - Low Tom.wav-7109959d4d530cab88e0029683dca010.sample"
+
+[deps]
+
+source_file="res://Assets/SFX/Drums/Drum - Low Tom.wav"
+dest_files=[ "res://.import/Drum - Low Tom.wav-7109959d4d530cab88e0029683dca010.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop=false
+compress/mode=0

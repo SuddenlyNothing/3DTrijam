@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/Guitar - E.wav-5925be70b63fca293c9c1e003f0074de.sample"
+
+[deps]
+
+source_file="res://Assets/SFX/Guitar/Guitar - E.wav"
+dest_files=[ "res://.import/Guitar - E.wav-5925be70b63fca293c9c1e003f0074de.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop=false
+compress/mode=0

@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/Piano - G.wav-2a8a929ebf3fd87e2faeacb7fcf7177c.sample"
+
+[deps]
+
+source_file="res://Assets/SFX/Piano/Piano - G.wav"
+dest_files=[ "res://.import/Piano - G.wav-2a8a929ebf3fd87e2faeacb7fcf7177c.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop=false
+compress/mode=0

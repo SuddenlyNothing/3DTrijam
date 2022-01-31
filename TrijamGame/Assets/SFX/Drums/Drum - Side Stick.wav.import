@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/Drum - Side Stick.wav-fa32c8b78c976a7ba9fa7a2f46305eb0.sample"
+
+[deps]
+
+source_file="res://Assets/SFX/Drums/Drum - Side Stick.wav"
+dest_files=[ "res://.import/Drum - Side Stick.wav-fa32c8b78c976a7ba9fa7a2f46305eb0.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop=false
+compress/mode=0
