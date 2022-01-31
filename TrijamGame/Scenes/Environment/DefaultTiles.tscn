@@ -1,0 +1,13 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://Scenes/Environment/default_mesh_lib.meshlib" type="MeshLibrary" id=1]
+
+[node name="DefaultTiles" type="GridMap"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0237284, -0.00885105, -0.013513 )
+mesh_library = ExtResource( 1 )
+data = {
+"cells": PoolIntArray(  )
+}
+__meta__ = {
+"_editor_clip_": 0
+}
